@@ -5,6 +5,7 @@ import { Contact } from "./Pages/Contact";
 import { Country } from "./Pages/Country";
 import { ErrorPage } from "./Pages/ErrorPage";
 import { AppLayout } from "./components/Layout/AppLayout";
+import { CountryDetails } from "./components/Layout/CountryDetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/country",
         element: <Country />,
+      },
+      {
+        path: "country/:id",
+        element: <CountryDetails />,
       },
       {
         path: "/contact",
